@@ -24,10 +24,10 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="nav-links flex gap-4 justify-center items-center">
-          <Link href="/">Home</Link>
+          <Link href="/">HOME</Link>
 
           <div className="dropdown">
-            <Link href="/about">About</Link>
+            <Link href="/about">ABOUT</Link>
             {/* <div className="dropdown-menu">
               <Link href="/about/company-overview">Company Overview</Link>
               <Link href="/about/work-culture">Work Culture</Link>
@@ -35,15 +35,25 @@ export default function Header() {
             </div> */}
           </div>
 
-          <div className="dropdown">
+          <div className="relative group">
             <Link href="/products">PRODUCTS</Link>
-            {/* <div className="dropdown-menu">
-              <Link href="/products/phlebotomy-app">Phlebotomy App</Link>
-              <Link href="/products/food-ordering-tracking">
+
+            <div className="absolute left-0 top-full mt-2 w-64 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <Link
+                className="block px-4 py-2 hover:bg-blue-100"
+                href="/products/phlebotomy-app"
+              >
+                Phlebotomy App
+              </Link>
+              <Link
+                className="block px-4 py-2 hover:bg-blue-100"
+                href="/products/food-ordering-tracking"
+              >
                 Food Ordering & Tracking
               </Link>
-            </div> */}
+            </div>
           </div>
+
           <div className="dropdown">
             <Link href="/products">TECHNOLOGIES</Link>
             {/* <div className="dropdown-menu">
@@ -53,8 +63,26 @@ export default function Header() {
               </Link>
             </div> */}
           </div>
+          <div className="dropdown">
+            <Link href="/products">SERVICE</Link>
+            {/* <div className="dropdown-menu">
+              <Link href="/products/phlebotomy-app">Phlebotomy App</Link>
+              <Link href="/products/food-ordering-tracking">
+                Food Ordering & Tracking
+              </Link>
+            </div> */}
+          </div>
+          <div className="dropdown">
+            <Link href="/products">INDUSTRIES</Link>
+            {/* <div className="dropdown-menu">
+              <Link href="/products/phlebotomy-app">Phlebotomy App</Link>
+              <Link href="/products/food-ordering-tracking">
+                Food Ordering & Tracking
+              </Link>
+            </div> */}
+          </div>
 
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">CONTACT</Link>
         </nav>
 
         {/* Mobile Toggle */}
