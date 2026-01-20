@@ -15,7 +15,7 @@ export default function CompaniesMarque() {
 
   return (
     
-   <div style={{width:"100%", backgroundColor:"green",display:"flex", justifyContent:"center"}} >
+   <div style={{width:"100%",display:"flex", justifyContent:"center"}} >
      <div className="marquee-wrapper">
       <div className="marquee-track">
         {[...companiesList, ...companiesList].map((item, i) => (
@@ -29,7 +29,6 @@ export default function CompaniesMarque() {
         .marquee-wrapper {
           overflow: hidden;
           width: 50%;
-          background: #fff;
         }
 
         .marquee-track {
